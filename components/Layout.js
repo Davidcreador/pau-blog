@@ -21,7 +21,7 @@ export default ({ children, title, description, coverImage }) => {
           <div className="text-white font-extrabold text-3xl md:text-5xl">
             {title}
           </div>
-          <div className="text-xl md:text-2xl text-gray-500">{description}</div>
+          <div className="text-xl md:text-2xl text-white">{description}</div>
         </div>
       </div>
       <div className="container px-4 md:px-0 max-w-6xl mx-auto -mt-32">
