@@ -23,6 +23,10 @@ const query = gql`
         id
         url
       }
+      avatar {
+        id
+        url
+      }
     }
   }
 `;
@@ -76,9 +80,9 @@ const PostList = (articles) => {
                         <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
                           <div className="flex items-center justify-between">
                             <img
-                              className="w-8 h-8 rounded-full mr-4 avatar"
+                              className="w-8 h-8 rounded-full mr-4 avatar object-cover"
                               data-tippy-content="Author Name"
-                              src="http://i.pravatar.cc/300"
+                              src={post.avatar ? post.avatar.url : ""}
                               alt="Avatar of Author"
                             />
                             <p className="text-gray-600 text-xs md:text-sm">
@@ -128,7 +132,7 @@ const PostList = (articles) => {
                         <img
                           className="w-8 h-8 rounded-full mr-4 avatar"
                           data-tippy-content="Author Name"
-                          src="http://i.pravatar.cc/300"
+                          src={post.avatar ? post.avatar.url : ""}
                           alt="Avatar of Author"
                         />
                         <p className="text-gray-600 text-xs md:text-sm">

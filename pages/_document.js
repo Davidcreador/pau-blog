@@ -15,7 +15,16 @@ class MyDocument extends Document {
             <div className="mx-0 sm:mx-6">
               <nav className="mt-0 w-full bg-white">
                 <div className="container mx-auto flex items-center">
-                  <div className="flex w-1/2 justify-end content-center">
+                  <div className="flex w-full justify-start content-center">
+                    <a
+                      className="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
+                      data-tippy-content="@instagram_handle"
+                      href="https://twitter.com/intent/tweet?url=#"
+                    >
+                      Inicio
+                    </a>
+                  </div>
+                  <div className="flex w-full justify-end content-center">
                     <a
                       className="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
                       data-tippy-content="@instagram_handle"

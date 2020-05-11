@@ -1,6 +1,11 @@
 import Head from "next/head";
 
-export default ({ children, title, description, coverImage }) => {
+export default ({
+  children,
+  title = "Paula de mamá",
+  description,
+  coverImage,
+}) => {
   return (
     <div className="antialiased text-gray-900 min-h-screen">
       <Head>
