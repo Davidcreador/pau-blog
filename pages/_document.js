@@ -19,7 +19,7 @@ class MyDocument extends Document {
                     <a
                       className="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar"
                       data-tippy-content="@instagram_handle"
-                      href="https://twitter.com/intent/tweet?url=#"
+                      href="/"
                     >
                       Inicio
                     </a>
